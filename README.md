@@ -1,3 +1,4 @@
+   <h4 align="center"> ☬тм¢увєя☬ Hypr S3C </h4>
 <h1 align="center">
   <br>
   <a href="https://github.com/tmcybers/Hypr-S3C"><img src="assets/hypr-s3c.1.png" width="1500px" alt="hypr-s3c"></a>
@@ -5,7 +6,7 @@
   <a href="https://github.com/tmcybers/Hypr-S3C"><img src="assets/hypr-s3c.3.png" width="1500px" alt="hypr-s3c"></a>
 </h1>
 
-<h4 align="center"> ☬тм¢увєя☬ Hypr S3C </h4>
+
 
 ### Hypr-S3C
 > Is the main idea on fully advanced tilling window manager and wayland based system, hyprland is the most futuristic tilling windows manager wayland based , and the most fluent and productive TWM, ideea behind is taking it to another level in terms of security and daily productivity is concerned, Hypr-S3C is in continuous development in implementations and improvements of appearance and speed of work, as well as implementations of cybersecurity tools and frameworks, all wayland supported and safe. 
@@ -23,7 +24,6 @@ IMPORTANT Wayland compositors should not be confused with Xorg window managers.
 >>>>>>>> This is Hardware fully instalation, no VM's here, so take in account this.
 
 # Master Instalation
-
 
 
 ## Nvidia
@@ -162,9 +162,6 @@ env = WLR_NO_HARDWARE_CURSORS,1
 | RSS News | newsboat |
 | Shell | zsh |
 | Terminal Tunning | starship |
-
-
-
 
 
 
