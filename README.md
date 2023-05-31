@@ -214,7 +214,7 @@ env = WLR_NO_HARDWARE_CURSORS,1
 
 ## GTK Theme and Icons Master
 
-~~I use `nwg-look` and `xfce4-settings` to apply the theme and icons~~
+> I use `nwg-look` and `xfce4-settings` to apply the theme and icons.
 
 ```
 cd ~/Downloads
@@ -327,4 +327,6 @@ hyprland-nvidia-git (AUR)
 
 
 
+# References
 
+* Official Hyprland GitHub: https://github.com/hyprwm/Hyprland
