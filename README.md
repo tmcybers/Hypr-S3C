@@ -41,6 +41,7 @@ IMPORTANT: Wayland compositors should not be confused with Xorg window managers.
   * [tmcyber Hypr-S3C Master](#tmcyber-hypr-s3c-master)
    * [GTK Theme and Icons Master](#gtk-theme-and-icnos-master)
     * [S3C Tools with Black Arch Arsenal](#s3c-tools-with-black-arch-arsenal)
+    * [Chromium S3C](#chromium-s3c)
      * [Rog Control Center](#rog-control-center)
  * [Patches](#patches)
 
