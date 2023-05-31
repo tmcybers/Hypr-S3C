@@ -139,7 +139,7 @@ options nvidia-drm modeset=1
 
 >> Proceed with caution with this variables, you can broke hypr from loading.
 
-> `GMB_BACKEND` in usualy not working good in my case, proceed if you know what are you doing.
+>>>>> `GMB_BACKEND` in usualy not working good in my case, proceed if you know what are you doing.
 
 # Nvidia Only
 env = LIBVA_DRIVER_NAME,nvidia
