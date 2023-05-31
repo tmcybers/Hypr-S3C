@@ -25,6 +25,7 @@ IMPORTANT Wayland compositors should not be confused with Xorg window managers.
 
 
 
+# WIKI
 
 * [# Master Installation ](#master-installation)
   * [# Yay ](#yay)
@@ -33,12 +34,9 @@ IMPORTANT Wayland compositors should not be confused with Xorg window managers.
 
 
 
+## Master Installation
 
-# Master Installation
-
-
-
-# Yay
+### Yay
 
 > You can use pacman or paru, I like yay.
 ```
