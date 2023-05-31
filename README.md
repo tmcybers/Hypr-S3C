@@ -18,12 +18,23 @@ IMPORTANT Wayland compositors should not be confused with Xorg window managers.
 
 >>>> see more on wiki of:  https://wiki.hyprland.org/
 
->>>>>>>>> Let's Proceed 
+>>>>>> From here proceed, only with fresh vanilla installation on arch linux (recommended) also debian an gentoo are fully supported.
+
+>>>>>>>> This is Hardware fully instalation, no VM's here, so take in account this.
 
 # Master Instalation
 
 
+## Nvidia
 
+*Nvidia only, proceed if you own an nvidia card, if not skip this master installation , and proceed above*
+
+**This is my personal conf\installation on nvidia, with modifications i did, and skiping foolishness**
+
+*Hardware where i got to work nvidia and hypr, with no issues, i can cofirnm is running as `FIRE`:*
+
+* Asus RogStrix G15 with NVIDIA GeForce RTX 3050 Laptop GPU
+* Acer Nitro 5 with Nvidia Geforce GTX 1050 (mobile) Laptop GPU
 
 
 
