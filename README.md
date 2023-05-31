@@ -187,10 +187,13 @@ env = WLR_NO_HARDWARE_CURSORS,1
 
 ~~Mi wiki with additionals stuff(s), and tools~~
 
+~~Opcional, it's not mandatory~~
+
 | Type | Package(s) |
 | ----------- | ----------- |
-| Extra Fonts | noto-fonts-emoji nerd-fonts-complete-mono-glyphs |
+| Extra Fonts | noto-fonts-emoji nerd-fonts-complete-mono-glyphs ttf-nerd-fonts-symbols-commons papirus-icon-theme dunst otf-sora ttf-nerd-fonts-symbols-common otf-firamono-nerd inter-font ttf-fantasque-nerd noto-fonts noto-fonts-emoji ttf-comfortaa ttf-jetbrains-mono-nerd ttf-icomoon-feather ttf-iosevka-nerd adobe-source-code-pro-fonts|
 | Extra Icons | https://github.com/Templarian/MaterialDesign-Font |
+| Extra Themes | nordic-theme 
 | Mail | thunderbird |
 | Fetch | nitch |
 | Misc | btop | lsd bat btop tldr stow wl-clipboard unzip yt-dlp |
