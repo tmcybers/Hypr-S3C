@@ -9,19 +9,21 @@
 
 
 ### Hypr-S3C
+
 > Is the main idea on fully advanced tilling window manager and wayland based system, hyprland is the most futuristic tilling windows manager wayland based , and the most fluent and productive TWM, ideea behind is taking it to another level in terms of security and daily productivity is concerned, Hypr-S3C is in continuous development in implementations and improvements of appearance and speed of work, as well as implementations of cybersecurity tools and frameworks, all wayland supported and safe. 
 
 #### Im pretty sure you are coming from Xorg: 
-Wayland info (especially useful for Xorg users)
-A Wayland compositor is a fully autonomous Display Server, like Xorg itself. It is not possible to mix’n’match Wayland compositors like you could on Xorg with window managers and compositors. It is also not entirely possible, nor recommended, to try and use all Xorg applications on Wayland. See this page for a list of recommended Wayland native/compatible programs.
 
-IMPORTANT Wayland compositors should not be confused with Xorg window managers.
+Wayland info (especially useful for Xorg users)
+
+A Wayland compositor is a fully autonomous Display Server, like Xorg itself. It is not possible to mix’n’match Wayland compositors like you could on Xorg with window managers and compositors. It is also not entirely possible, nor recommended, to try and use all Xorg applications on Wayland. See this page for a list of recommended Wayland native/compatible programs.
+IMPORTANT: Wayland compositors should not be confused with Xorg window managers.
 
 >>>> see more on wiki of:  https://wiki.hyprland.org/
 
 >>>>>> From here proceed, only with fresh vanilla installation on arch linux (recommended) also debian an gentoo are fully supported.
 
->>>>>>>> ~~This is Hardware fully instalation, no VM's here, so take in account this~~
+ ~~This is Hardware fully instalation, no VM's here, so take in account this~~
 
 
 
@@ -29,9 +31,9 @@ IMPORTANT Wayland compositors should not be confused with Xorg window managers.
 
 * [# Master Installation ](#master-installation)
   * [# Yay ](#yay)
-   * [# Nvidia ](#nvidia)
-    * [# Hypr Master ](#hypr-master)
-
+  * [# Nvidia ](#nvidia)
+* [# Hypr Master ](#hypr-master)
+  * [tmcyber Hypr-S3C Master](#tmcyber-hypr-s3c-master)
 
 
 ## Master Installation
@@ -172,7 +174,7 @@ env = WLR_NO_HARDWARE_CURSORS,1
 
 ~~Take in account that im not using login manager, like sddm or others, i use tty, im not fan of login managers and GUI stuffs.
 
-## tmCyber Hypr-S3C Master
+## tmcyber Hypr-S3C Master
 
 ~~Mi wiki with additionals stuff(s), and tools.
 
@@ -289,7 +291,22 @@ $ sudo pacman -S blackarch-wireless
 $ sudo pacman -S blackarch/nmap
 ```
 
+# Rog Control Center
 
+> Only if you own a Rog Strix , if not skip this.
+
+[Asus Linux](https://asus-linux.org/supergfxctlgex/)
+
+
+
+# N/A
+
+Patch for Flickering/Glitching on  Second Monitors on Nvidia:
+```
+hyprland-nvidia (AUR)
+hyprland-nvidia-git (AUR)
+```
+> If is asking for Replace `hyprland-git` with `hyprland-nvidia-git` , say Yes.
 
 
 
