@@ -209,8 +209,9 @@ env = WLR_NO_HARDWARE_CURSORS,1
 | VPN | Mullvad |
 | Latest Cyber News | https://github.com/tmcybers/Latest-Cyber-News |
 | Socks | python-pysocks shadowsocks |
-
-
+| Recorder | wf-recorder |
+| Stream | obs-studio |
+| Plugin for Voice | noise-suppression-for-voice  |
 
 ## GTK Theme and Icons Master
 
