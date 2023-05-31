@@ -1,4 +1,4 @@
-   <h1> <align="center"> ☬тм¢увєя☬ Hypr S3C </h1>
+   <h1 <align="center"> ☬тм¢увєя☬ Hypr S3C </h1>
 <h1 align="center">
   <br>
   <a href="https://github.com/tmcybers/Hypr-S3C"><img src="assets/hypr-s3c.1.png" width="1500px" alt="hypr-s3c"></a>
