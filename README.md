@@ -23,7 +23,29 @@ IMPORTANT Wayland compositors should not be confused with Xorg window managers.
 
 >>>>>>>> This is Hardware fully instalation, no VM's here, so take in account this.
 
-# Master Instalation
+
+* [Master Installation](#master-installation)
+ * [Yay](#yay)
+
+
+
+
+# Master Installation
+
+
+
+# Yay
+
+> You can use pacman or paru, I like yay.
+```
+pacman -S --needed git base-devel
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+
+# delete yay files after the completion (optional) 
+cd .. && rm -rf yay
+```
 
 
 ## Nvidia
@@ -167,6 +189,10 @@ env = WLR_NO_HARDWARE_CURSORS,1
 | Coder | visual-studio-code-bin |
 | Editor Coder | geany |
 | Text Editor | neovim |
+| Anonymizing  | tor torsocks onionshare |
+| VPN | Mullvad |
+| Latest Cyber News | https://github.com/tmcybers/Latest-Cyber-News |
+| Socks | python-pysocks shadowsocks |
 
 
 
@@ -234,7 +260,7 @@ sudo pacman -Syy
 
 *Basic commands*
 
->>> Use pacman not yay.
+>>> Use pacman or yay, yay is the most updated always.
 
 > Install all black arch tools
 ```
@@ -246,7 +272,7 @@ $pacman -Sgg | grep blackarch | cut -d' ' -f2 | sort -u
 ```
 > List available groups.
 ```
-$pacman -Sg | grep blackarch
+$pacman -Sg | Anonymizing grep blackarch
 ```
 > List the tools that make up each group (p/e wireless).
 ```
