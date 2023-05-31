@@ -125,11 +125,11 @@ options nvidia-drm modeset=1
 | Fonts | ttf-font-awesome otf-font-awesome|
 | Icons | ttf-nerd-fonts-symbols ttf-font-icons sway-dynamic-names-git |
 
-| Opcional Archive Explorer GUI | thunar thunar-archive-plugin file-roller fmpegthumbnaile|
+| Opcional Archive Explorer GUI | thunar thunar-archive-plugin file-roller fmpegthumbnailer |
 
 > With all this installed, now you can reboot, and login into Hyperland.
-> 
-> > Take in account that im not using login manager, like sddm or others, i use tty, im not fan of login managers and GUI stuffs.
+
+>> Take in account that im not using login manager, like sddm or others, i use tty, im not fan of login managers and GUI stuffs.
 
 ## tmCyber Hypr-S3C
 
