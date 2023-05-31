@@ -51,7 +51,7 @@ A Wayland compositor is a fully autonomous Display Server, like Xorg itself. It 
     * [Chromium S3C](#chromium-s3c)
      * [Rog Control Center](#rog-control-center)
  * [Patches](#patches)
-
+ * [Extras](#extras)
 
 ## Master Installation
 
@@ -355,7 +355,7 @@ hyprland-nvidia-git (AUR)
 
 
 
-#### Extras 
+### Extras 
 
 *Icons for waybar/starship*
 
