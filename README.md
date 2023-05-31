@@ -96,7 +96,25 @@ Add this:
 options nvidia-drm modeset=1
 ```
 
->>> Take in account that u must reboot after all this, but proceed with hypr install and all dependencies and reboot later, but dont'forget it.
+
+**Nvidia Env**
+
+> Add this into your hypr.conf.
+
+>> Proceed with caution with this variables, you can broke hypr from loading.
+
+> `GMB_BACKEND` in usualy not working good in my case, proceed if you know what are you doing.
+
+# Nvidia Only
+env = LIBVA_DRIVER_NAME,nvidia
+env = XDG_SESSION_TYPE,wayland
+env = __GL_GSYNC_ALLOWED, 0
+#env = GBM_BACKEND,nvidia-drm  # high risk, use it at your own risk.
+env = __GLX_VENDOR_LIBRARY_NAME,nvidia
+env = WLR_NO_HARDWARE_CURSORS,1
+
+>>> Take in account that u must reboot after all this, but proceed with hypr master install and all dependencies and `reboot` later, but dont'forget it!
+
 
 ## Hypr Master
 
@@ -118,25 +136,57 @@ options nvidia-drm modeset=1
 | Network Manager | network-manager-applet |
 | Archive Explorer | ranger |
 | Themer | nwg-look |
-| Screen Capture and Tools | grimblast slurp swappy |
+| Screen Capture and Tools | grimblast-git slurp swappy |
 | Audio Player | mpv |
 | Log-Out Manager | wlogout |
 | Browser | chromium |
 | Fonts | ttf-font-awesome otf-font-awesome|
 | Icons | ttf-nerd-fonts-symbols ttf-font-icons sway-dynamic-names-git |
-
 | Opcional Archive Explorer GUI | thunar thunar-archive-plugin file-roller fmpegthumbnailer |
 
 > With all this installed, now you can reboot, and login into Hyperland.
 
 >> Take in account that im not using login manager, like sddm or others, i use tty, im not fan of login managers and GUI stuffs.
 
-## tmCyber Hypr-S3C
+## tmCyber Hypr-S3C Master
 
 > Mi wiki with additionals stuff(s), and tools.
 
 | Type | Package(s) |
 | ----------- | ----------- |
-| Fonts | nerd-fonts-complete-mono-glyphs |
+| Extra Fonts | noto-fonts-emoji nerd-fonts-complete-mono-glyphs |
 | Extra Icons | https://github.com/Templarian/MaterialDesign-Font |
-| Mail |   thunderbird |
+| Mail | thunderbird |
+| Fetch | nitch |
+| Misc | btop | lsd bat btop tldr stow wl-clipboard unzip yt-dlp |
+| RSS News | newsboat |
+| Shell | zsh |
+| Terminal Tunning | starship |
+
+
+
+
+
+
+
+
+## GTK Theme and Icons Master
+
+> I use `nwg-look` and `xfce4-settings` to apply the theme and icons.
+
+```
+cd ~/Downloads
+git clone https://github.com/Fausto-Korpsvart/Tokyo-Night-GTK-Theme.git
+
+# Installs theme
+sudo cp -r Tokyo-Night-GTK-Theme/themes/Tokyonight-Dark-BL-LB /usr/share/themes/
+
+# Installs icons
+sudo cp -r Tokyo-Night-GTK-Theme/icons/Tokyonight-Dark /usr/share/icons/
+
+# Deletes folder
+rm -r Tokyo-Night-GTK-Theme/
+```
+
+
+
