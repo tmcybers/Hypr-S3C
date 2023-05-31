@@ -96,23 +96,47 @@ Add this:
 options nvidia-drm modeset=1
 ```
 
->>> Take in account that u must reboot after all this, but proceed with hypr install and all dependencies and reboot later, but dont'forghet it.
+>>> Take in account that u must reboot after all this, but proceed with hypr install and all dependencies and reboot later, but dont'forget it.
 
+## Hypr Master
 
+| Type | Package(s) |
+| ----------- | ----------- |
+| Hyprland Dependencies | hyprland-git qt5-wayland qt5ct qt6-wayland qt6ct qt5-svg qt5-quickcontrols2 qt5-graphicaleffects gtk3 polkit-gnome pipewire wireplumber gvfs |
+| Library and Depend(s) |  python-requests pacman-contrib  jq gcc12  |
+| Clipboard | wl-clipboard cliphist |
+| Bar | waybar-hyprland-git |
+| Launcher | wofi-git |
+| Lock-Screen | swaylock-effects |
+| XDG Desktop Portal  | xdg-desktop-portal-hyprland-git |
+| Wallpaper Setter | hyprpaper-git |
+| Terminal | kitty |
+| Notification(s) | dunst |
+| Audio | pamixer pavucontrol pipewire-pulse |
+| Bluetooth |  bluez bluez-utils blueman |
+| Brightness (only Laptop) |  brightnessctl |
+| Network Manager | network-manager-applet |
+| Archive Explorer | ranger |
+| Themer | nwg-look |
+| Screen Capture and Tools | grimblast slurp swappy |
+| Audio Player | mpv |
+| Log-Out Manager | wlogout |
+| Browser | chromium |
+| Fonts | ttf-font-awesome otf-font-awesome|
+| Icons | ttf-nerd-fonts-symbols ttf-font-icons sway-dynamic-names-git |
 
+| Opcional Archive Explorer GUI | thunar thunar-archive-plugin file-roller fmpegthumbnaile|
 
+> With all this installed, now you can reboot, and login into Hyperland.
+> 
+> > Take in account that im not using login manager, like sddm or others, i use tty, im not fan of login managers and GUI stuffs.
 
+## tmCyber Hypr-S3C
 
+> Mi wiki with additionals stuff(s), and tools.
 
-
-
-
-
-
-
-
-
-
-
-
-
+| Type | Package(s) |
+| ----------- | ----------- |
+| Fonts | nerd-fonts-complete-mono-glyphs |
+| Extra Icons | https://github.com/Templarian/MaterialDesign-Font |
+| Mail |   thunderbird |
