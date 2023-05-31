@@ -25,9 +25,12 @@ IMPORTANT Wayland compositors should not be confused with Xorg window managers.
 # Master Instalation
 
 
+
 ## Nvidia
 
 *Nvidia only, proceed if you own an nvidia card, if not skip this master installation , and proceed above*
+
+> IMPORTANT: Install nvidia from tty, dont'proceed with hypr.
 
 **This is my personal conf\installation on nvidia, with modifications i did, and skiping foolishness**
 
@@ -36,13 +39,64 @@ IMPORTANT Wayland compositors should not be confused with Xorg window managers.
 * Asus RogStrix G15 with NVIDIA GeForce RTX 3050 Laptop GPU
 * Acer Nitro 5 with Nvidia Geforce GTX 1050 (mobile) Laptop GPU
 
+Requirements\Dependencies:
 
+```
+linux-headers
+base-devel
+qt5-wayland
+qt6-wayland
+qt5c
+qt6ct 
+libva 
+```
 
+Proceed with nvida:
 
+```
+libva-nvidia-driver-git
+nvidia-dkms
+```
 
+Add modules for nvidia:
 
+```
+cd /etc/mkinitcpio.conf
+sudo neovim mkinitcpio.conf
+```
+> if mkinitcpio.conf is not there, create it.
 
+Add this into MODULES=() exactly like this, into brackets: 
 
+```
+nvidia nvidia_modeset nvidia_uvm nvidia_drm
+```
+
+Create the Image:
+
+```
+sudo mkinitpcio -P linux
+```
+
+IMPORTANT: 
+>> If you have `linut-lts`, `linux-zen` use: `sudo mkinitpcio -P linux-lts` , and asap.
+
+Now final Important step:
+
+> If nvidia.conf is not there, make `touch nvidia,conf`  and ready.
+
+```
+cd /etc/modprobe.d/nvidia.conf
+sudo neovim nvidia.conf
+```
+
+Add this:
+
+```
+options nvidia-drm modeset=1
+```
+
+>>> Take in account that u must reboot after all this, but proceed with hypr install and all dependencies and reboot later, but dont'forghet it.
 
 
 
