@@ -36,7 +36,7 @@ A Wayland compositor is a fully autonomous Display Server, like Xorg itself. It 
 
 ~~I have present an iso this year~~
 
->>>>> I Share knowledge.
+>>>>> I Share knowledge. [![Website](https://img.shields.io/badge/Telegram-Private-brightgreen?style=flat-square&logo=telegram)](https://twitter.com/tmcybers)
 
 
 # WIKI
