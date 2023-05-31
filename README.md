@@ -19,7 +19,7 @@ Wayland info (especially useful for Xorg users)
 A Wayland compositor is a fully autonomous Display Server, like Xorg itself. It is not possible to mix’n’match Wayland compositors like you could on Xorg with window managers and compositors. It is also not entirely possible, nor recommended, to try and use all Xorg applications on Wayland. See this page for a list of recommended Wayland native/compatible programs.
 IMPORTANT: Wayland compositors should not be confused with Xorg window managers.
 
->>>> see more on wiki of:  https://wiki.hyprland.org/
+>>>> see more on [Hypr Wiki] (https://wiki.hyprland.org/)
 
 >>>>>> From here proceed, only with fresh vanilla installation on arch linux (recommended) also debian an gentoo are fully supported.
 
