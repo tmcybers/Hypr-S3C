@@ -21,7 +21,7 @@ IMPORTANT Wayland compositors should not be confused with Xorg window managers.
 
 >>>>>> From here proceed, only with fresh vanilla installation on arch linux (recommended) also debian an gentoo are fully supported.
 
->>>>>>>> This is Hardware fully instalation, no VM's here, so take in account this.
+>>>>>>>> ~~This is Hardware fully instalation, no VM's here, so take in account this~~
 
 
 
