@@ -305,6 +305,23 @@ $ sudo pacman -S blackarch-wireless
 $ sudo pacman -S blackarch/nmap
 ```
 
+# Chromium S3C
+
+> Chrome Store:
+```
+NoScript
+UBlock Origin
+Privacy Badger
+Smart HTTPS
+Luminous: Javascript Events Blocker
+Privacy Settings
+```
+
+Good Practices:
+
+>> Block third-party cookies
+>>> Clean History when leave.
+
 
 
 # Rog Control Center
