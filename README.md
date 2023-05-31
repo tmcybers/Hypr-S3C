@@ -26,10 +26,10 @@ IMPORTANT Wayland compositors should not be confused with Xorg window managers.
 
 
 
-* [# Master Installation](#master-installation)
-  * [# Yay](#yay)
-  * [# Nvidia](#nvidia)
-   * [# Hypr Master](#hypr-master)
+* [# Master Installation ](#master-installation)
+  * [# Yay ](#yay)
+   * [# Nvidia ](#nvidia)
+    * [# Hypr Master ](#hypr-master)
 
 
 
@@ -58,7 +58,7 @@ cd .. && rm -rf yay
 
 > IMPORTANT: Install nvidia from tty, dont'proceed with hypr.
 
-**This is my personal conf\installation on nvidia, with modifications i did, and skiping foolishness**
+**This is my personal conf\installation on nvidia, with modifications i did, ~~and skiping foolishness**
 
 *Hardware where i got to work nvidia and hypr, with no issues, i can cofirnm is running as `FIRE`:*
 
@@ -172,11 +172,11 @@ env = WLR_NO_HARDWARE_CURSORS,1
 
 > With all this installed, now you can reboot, and login into Hyperland.
 
->> Take in account that im not using login manager, like sddm or others, i use tty, im not fan of login managers and GUI stuffs.
+~~Take in account that im not using login manager, like sddm or others, i use tty, im not fan of login managers and GUI stuffs.
 
 ## tmCyber Hypr-S3C Master
 
-> Mi wiki with additionals stuff(s), and tools.
+~~Mi wiki with additionals stuff(s), and tools.
 
 | Type | Package(s) |
 | ----------- | ----------- |
@@ -202,7 +202,7 @@ env = WLR_NO_HARDWARE_CURSORS,1
 
 ## GTK Theme and Icons Master
 
-> I use `nwg-look` and `xfce4-settings` to apply the theme and icons.
+~~I use `nwg-look` and `xfce4-settings` to apply the theme and icons.
 
 ```
 cd ~/Downloads
@@ -222,7 +222,7 @@ rm -r Tokyo-Night-GTK-Theme/
 
 > All Hacking tools from one script over arch.
 
->> Im not fan of kali and parrot they are privative, i usualy do my own job.
+~~Im not fan of kali and parrot they are privative, i usualy do my own job.
 
 Install script:
 
@@ -252,9 +252,9 @@ Edit mirrors:
 sudo neovim /etc/pacman.d/blackarch-mirrorlist
 ```
 
-> I always use germany mirror, never was failled. Choose based on your location, choose one near you.
+~~I always use germany mirror, never was failled. Choose based on your location, choose one near you.
 
-IMPORTANT
+**IMPORTANT**
 Update:
 ```
 sudo pacman -Syy
