@@ -42,7 +42,7 @@ IMPORTANT: Wayland compositors should not be confused with Xorg window managers.
    * [GTK Theme and Icons Master](#gtk-theme-and-icnos-master)
     * [S3C Tools with Black Arch Arsenal](#s3c-tools-with-black-arch-arsenal)
      * [Rog Control Center](#rog-control-center)
- * [Bugs](#bugs)
+ * [Patches](#patches)
 
 
 ## Master Installation
@@ -296,7 +296,7 @@ $ pacman -Sg blackarch-wireless
 $ sudo pacman -S blackarch-wireless
 ```
 > Install a package from the Blackarch repo. This command is useful when you need a package from a specific repo.
-```
+```Patch
 $ sudo pacman -S blackarch/nmap
 ```
 
@@ -308,7 +308,7 @@ $ sudo pacman -S blackarch/nmap
 
 
 
-# N/A
+# Patches
 
 Patch for Flickering/Glitching on  Second Monitors on Nvidia:
 ```
