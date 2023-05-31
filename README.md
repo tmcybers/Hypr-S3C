@@ -29,11 +29,16 @@ IMPORTANT: Wayland compositors should not be confused with Xorg window managers.
 
 # WIKI
 
-* [# Master Installation ](#master-installation)
-  * [# Yay ](#yay)
-  * [# Nvidia ](#nvidia)
-* [# Hypr Master ](#hypr-master)
+* [Master Installation](#master-installation)
+  * [Yay](#yay)
+  * [Nvidia](#nvidia)
+* [Hypr Master ](#hypr-master)
   * [tmcyber Hypr-S3C Master](#tmcyber-hypr-s3c-master)
+   * [GTK Theme and Icons Master](#gtk-theme-and-icnos-master)
+    * [S3C Tools with Black Arch Arsenal](#s3c-tools-with-black-arch-arsenal)
+     * [Rog Control Center](rog-control-center)
+      * [N/A](#n/a)
+
 
 
 ## Master Installation
