@@ -126,7 +126,7 @@ IMPORTANT:
 
 Now final Important step:
 
-> If nvidia.conf is not there, make `touch nvidia,conf`  and ready.
+> If nvidia.conf is not there, make `touch nvidia.conf`  and ready.
 
 ```
 cd /etc/modprobe.d/nvidia.conf
@@ -352,6 +352,27 @@ hyprland-nvidia (AUR)
 hyprland-nvidia-git (AUR)
 ```
 > If is asking for Replace `hyprland-git` with `hyprland-nvidia-git` , say Yes.
+
+
+
+#### Extras 
+
+*Icons for waybar/starship/zsh/hypr*
+
+(https://fontawesome.com/v6/search?o=r&m=free)
+
+Extra Pumping Icons (https://www.toptal.com/designers/htmlarrows/) (https://fontawesome.com/v5/cheatsheet/free/solid)
+
+
+#### Wallpapers
+
+[WallP](https://www.pxfuel.com/)
+
+
+#### Colors
+
+[encycolorpedia](https://encycolorpedia.es/)
+
 
 
 
