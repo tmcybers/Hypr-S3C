@@ -141,6 +141,7 @@ options nvidia-drm modeset=1
 
 >>>>> `GMB_BACKEND` in usualy not working good in my case, proceed if you know what are you doing.
 
+```
 # Nvidia Only
 env = LIBVA_DRIVER_NAME,nvidia
 env = XDG_SESSION_TYPE,wayland
@@ -148,6 +149,7 @@ env = __GL_GSYNC_ALLOWED, 0
 #env = GBM_BACKEND,nvidia-drm  # high risk, use it at your own risk.
 env = __GLX_VENDOR_LIBRARY_NAME,nvidia
 env = WLR_NO_HARDWARE_CURSORS,1
+```
 
 >>> Take in account that u must reboot after all this, but proceed with hypr master install and all dependencies and `reboot` later, but dont'forget it!
 
