@@ -46,7 +46,7 @@ linux-headers
 base-devel
 qt5-wayland
 qt6-wayland
-qt5c
+qt5ct
 qt6ct 
 libva 
 ```
@@ -162,8 +162,11 @@ env = WLR_NO_HARDWARE_CURSORS,1
 | RSS News | newsboat |
 | Shell | zsh |
 | Terminal Tunning | starship |
-
-
+| Networking | net-tools |
+| Multipurpose relay | socat |
+| Coder | visual-studio-code-bin |
+| Editor Coder | geany |
+| Text Editor | neovim |
 
 
 
@@ -184,6 +187,82 @@ sudo cp -r Tokyo-Night-GTK-Theme/icons/Tokyonight-Dark /usr/share/icons/
 # Deletes folder
 rm -r Tokyo-Night-GTK-Theme/
 ```
+
+## S3C Tools with Black Arch Arsenal
+
+> All Hacking tools from one script over arch.
+
+>> Im not fan of kali and parrot they are privative, i usualy do my own job.
+
+Install script:
+
+```
+curl -O https://blackarch.org/strap.sh
+```
+
+Check hash:
+
+```
+sha1sum strap.sh
+```
+Permissions:
+
+```
+chmod +x strap.sh
+```
+
+Execute:
+
+```
+sudo ./strap.sh
+```
+
+Edit mirrors:
+```
+sudo neovim /etc/pacman.d/blackarch-mirrorlist
+```
+
+> I always use germany mirror, never was failled. Choose based on your location, choose one near you.
+
+IMPORTANT
+Update:
+```
+sudo pacman -Syy
+```
+
+>> Ready! We already have the Blackarch arsenal within our reach, but we are not done yet. We must uncomment the Multilib repo to install some tools properly.
+
+*Basic commands*
+
+>>> Use pacman not yay.
+
+> Install all black arch tools
+```
+$ pacman -S blackarch
+```
+> List all available arsenal
+```
+$pacman -Sgg | grep blackarch | cut -d' ' -f2 | sort -u
+```
+> List available groups.
+```
+$pacman -Sg | grep blackarch
+```
+> List the tools that make up each group (p/e wireless).
+```
+$ pacman -Sg blackarch-wireless
+```
+> Install a complete set of tools.
+```
+$ sudo pacman -S blackarch-wireless
+```
+> Install a package from the Blackarch repo. This command is useful when you need a package from a specific repo.
+```
+$ sudo pacman -S blackarch/nmap
+```
+
+
+
 
 
 
