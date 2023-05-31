@@ -24,8 +24,11 @@ IMPORTANT Wayland compositors should not be confused with Xorg window managers.
 >>>>>>>> This is Hardware fully instalation, no VM's here, so take in account this.
 
 
-* [Master Installation](#master-installation)
- * [Yay](#yay)
+
+
+
+ [Master Installation](#master-installation)
+  [Yay](#yay)
 
 
 
