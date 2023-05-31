@@ -8,7 +8,7 @@
 
 [![Website](https://img.shields.io/badge/WM-Hypr-brightgreen?style=flat-square&logo=appveyor)](https://tmcybers.github.io/)
 [![Website](https://img.shields.io/badge/SHELL%20-ZSH-green?style=flat-square&logo=appveyor)](https://medium.com/@tmcybers)
-[![Website](https://img.shields.io/badge/-TWITTER-yellow?style=for-the-badge&logo=TWITTER)](https://twitter.com/tmcybers)
+[![Website](https://img.shields.io/badge/PROMPT-STARSHIP-yellowgreen?style=flat-square&logo=appveyor)](https://twitter.com/tmcybers)
 
 ### Hypr-S3C
 
