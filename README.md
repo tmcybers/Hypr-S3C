@@ -357,11 +357,11 @@ hyprland-nvidia-git (AUR)
 
 #### Extras 
 
-*Icons for waybar/starship/zsh/hypr*
+*Icons for waybar/starship/zsh/hypr*encycolorpedia
 
-(https://fontawesome.com/v6/search?o=r&m=free)
+[FontAwesome](https://fontawesome.com/v6/search?o=r&m=free)
 
-Extra Pumping Icons (https://www.toptal.com/designers/htmlarrows/) (https://fontawesome.com/v5/cheatsheet/free/solid)
+Extra Pumping Icons [TopTal](https://www.toptal.com/designers/htmlarrows/) [Solid](https://fontawesome.com/v5/cheatsheet/free/solid)
 
 
 #### Wallpapers
