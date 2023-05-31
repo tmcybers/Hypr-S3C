@@ -26,10 +26,10 @@ IMPORTANT Wayland compositors should not be confused with Xorg window managers.
 
 
 
-* [#Master Installation](#master-installation)
-  * [#Yay](#yay)
-  * [#Nvidia](#nvidia)
-   * [#Hypr Master](#hypr-master)
+* [# Master Installation](#master-installation)
+  * [# Yay](#yay)
+  * [# Nvidia](#nvidia)
+   * [# Hypr Master](#hypr-master)
 
 
 
