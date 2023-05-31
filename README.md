@@ -182,7 +182,7 @@ env = WLR_NO_HARDWARE_CURSORS,1
 | Icons | ttf-nerd-fonts-symbols ttf-font-icons sway-dynamic-names-git |
 | Opcional Archive Explorer GUI | thunar thunar-archive-plugin file-roller fmpegthumbnailer |
 
-> With all this installed, now you can reboot, and login into Hyperland.
+> With all this installed, now you can reboot, and login into Hyprland.
 
 ~~Take in account that im not using login manager, like sddm or others, i use tty, im not fan of login managers and GUI stuffs~~
 
