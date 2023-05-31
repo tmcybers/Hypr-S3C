@@ -1,0 +1,41 @@
+# general
+auto-reload               no
+cleanup-on-quit           yes
+max-items                 50
+prepopulate-query-feeds   yes
+reload-threads            100
+browser                   chromium
+
+# colors
+color title               color4   color0
+color info                color4   color0
+color background          default  default
+color listnormal          default  default
+color listnormal_unread   color15  default bold
+color listfocus           color0   color4
+color listfocus_unread    color4   default reverse bold
+color article             color15  default 
+
+# ignore
+ignore-mode    "display"
+ignore-article "regex:https?://ntr.frail.duckdns.org/.*"     "title =~ \"^R to\""   # ignore twitter replies
+ignore-article "regex:https?://ntr.frail.duckdns.org/.*"     "title =~ \"^RT by\""  # ignore twitter retweets
+ignore-article "regex:https?://www.youtube.com/.*"           "title =~ \"#shorts\"" # ignore youtube shorts
+
+# format
+feedlist-format    "%n %9u %t"                # unread  | (unread/total) | title 
+articlelist-format "%f %7D %?T?| %-25T| ?%t"  # read    | date           | author | title 
+
+# highlight
+highlight article "(^Feed:.*|^Title:.*|^Author:.*|^Date:.*)" color0 color4 bold
+highlight article "https?://[^ ]+"                           green default
+highlight article "\\[[0-9][0-9]*\\]"                        color48 default bold
+highlight article "\\[image\\ [0-9]+\\]"                     green default bold
+highlight article "\\[embedded flash: [0-9][0-9]*\\]"        green default bold
+highlight article ":.*\\(link\\)$"                           green default
+highlight article ":.*\\(image\\)$"                          green default
+highlight article ":.*\\(embedded flash\\)$"                 green default
+
+# macros
+macro v set browser "mpv '%u'"; open-in-browser; set browser chromium
+macro i set browser "feh '%u'"; open-in-browser; set browser chromium

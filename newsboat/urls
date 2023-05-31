@@ -1,0 +1,49 @@
+# query feeds
+"query:Unread Articles:unread = \"yes\" and tags !# \"pouet\" and tags !# \"page2rss\" and tags !# \"xiv\""
+"query:Unread Articles (1 year old):unread = \"yes\" and tags !# \"pouet\" and tags !# \"page2rss\" and tags !# \"xiv\" and age between 0:365"
+"query:Unread Articles (1 month old):unread = \"yes\" and tags !# \"pouet\" and tags !# \"page2rss\" and tags !# \"xiv\" and age between 0:31"
+"query:Unread Articles (1 week old):unread = \"yes\" and tags !# \"pouet\" and tags !# \"page2rss\" and tags !# \"xiv\" and age between 0:7"
+"query:Unread Articles (favourite):unread = \"yes\" and tags # \"favourite\""
+
+# programming feeds
+http://altdevblogaday.org/feed/ programming
+http://0fps.wordpress.com/feed/ programming
+http://29a.ch/feed.atom programming
+http://3d.benjamin-thaut.de/?feed=rss2 programming
+http://acko.net/blog/feed programming maths
+http://adrianboeing.blogspot.com/feeds/posts/default programming
+https://molecularmusings.wordpress.com/feed/ programming favourite
+https://idea.popcount.org/rss.xml programming
+http://zeuxcg.org/feed programming
+http://akrzemi1.wordpress.com/feed/ programming c++
+http://aigamedev.com/feed/ programming
+http://android-developers.blogspot.com/feeds/posts/default programming android
+http://anki3d.org/feed/ programming graphics
+http://blog.blackpawn.com/rss programming graphics
+http://www.blackpawn.com/blog/feed/ programming graphics favourite
+http://zserge.com/rss.xml programming
+http://anteru.net/feed/ programming graphics
+http://antirez.com/rss ~antirez programming redis
+http://www.romancortes.com/blog/feed/ programming graphics
+http://www.romancortes.com/v2/feed.xml programming graphics
+http://xmunkki.org/wiki/feed.php programming
+http://www.pompidev.net/feed/ programming
+http://www.ogre3d.org/feed programming graphics
+http://gafferongames.com/feed/ programming networhttps://www.forceflow.be/feed/index.xmlk physics
+http://andrewfsu.blogspot.com/feeds/posts/default programming opencl
+http://ariya.ofilabs.com/feed programming
+http://www.yosefk.com/blog/feed programming
+http://assemblyrequired.crashworks.org/feed/ programming
+http://beust.com/weblog/feed/ programming javascript
+http://bitsquid.blogspot.com/feeds/posts/default programming
+http://asktherelic.com/code/feed/atom programming
+http://blog.blockos.org/?feed=rss2 programming
+http://blog.bengarney.com/feed/ programming
+http://blog.llvm.org/feeds/posts/default programming
+http://blog.elmindreda.org/feed/ programming
+http://www.thebigblob.com/feed/ programming
+http://blog.regehr.org/feed programming
+http://www.realtimerendering.com/blog/feed/ programming graphics
+http://www.spuify.co.uk/?feed=rss2 programming
+http://www.paradeofrain.com/feed/ programming indie
+http://animationphysics.wordpress.com/feed/ programming physics
