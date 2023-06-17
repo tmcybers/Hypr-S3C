@@ -34,24 +34,28 @@ A Wayland compositor is a fully autonomous Display Server, like Xorg itself. It 
  
 ~~Im not fan of automatic things, the ideea behind here is the Learning~~
 
-~~I have present an iso this year~~
+
 
 >>>>> I Share knowledge. [![Website](https://img.shields.io/badge/Telegram-Private-brightgreen?style=flat-square&logo=telegram)](https://t.me/+l5WYQySOL-0yMDQ0)
 
 
 # WIKI
 
-* [Master Installation](#master-installation)
-  * [Yay](#yay)
-  * [Nvidia](#nvidia)
-* [Hypr Master ](#hypr-master)
-  * [tmcyber Hypr-S3C Master](#tmcyber-hypr-s3c-master)
-   * [GTK Theme and Icons Master](#gtk-theme-and-icnos-master)
-    * [S3C Tools with Black Arch Arsenal](#s3c-tools-with-black-arch-arsenal)
-    * [Chromium S3C](#chromium-s3c)
-     * [Rog Control Center](#rog-control-center)
- * [Patches](#patches)
- * [Extras](#extras)
+- [WIKI](#wiki)
+  - [Master Installation](#master-installation)
+    - [Yay](#yay)
+  - [Nvidia](#nvidia)
+  - [Hypr Master](#hypr-master)
+  - [tmcyber Hypr-S3C Master](#tmcyber-hypr-s3c-master)
+  - [GTK Theme and Icons Master](#gtk-theme-and-icons-master)
+  - [S3C Tools with Black Arch Arsenal](#s3c-tools-with-black-arch-arsenal)
+- [Chromium S3C](#chromium-s3c)
+- [Rog Control Center](#rog-control-center)
+- [Patches](#patches)
+    - [Extras](#extras)
+      - [Wallpapers](#wallpapers)
+      - [Colors](#colors)
+- [References](#references)
 
 ## Master Installation
 
@@ -184,10 +188,10 @@ env = WLR_NO_HARDWARE_CURSORS,1
 | Screen Capture and Tools | grimblast-git slurp swappy |
 | Audio Player | mpv |
 | Log-Out Manager | wlogout |
-| Browser | chromium |
+| Browser | brave |
 | Fonts | ttf-font-awesome otf-font-awesome|
 | Icons | ttf-nerd-fonts-symbols ttf-font-icons sway-dynamic-names-git |
-| Opcional Archive Explorer GUI | thunar thunar-archive-plugin file-roller fmpegthumbnailer |
+| (Opcional) Archive Explorer GUI | thunar thunar-archive-plugin file-roller fmpegthumbnailer |
 
 > With all this installed, now you can reboot, and login into Hyprland.
 
@@ -203,8 +207,8 @@ env = WLR_NO_HARDWARE_CURSORS,1
 | ----------- | ----------- |
 | Extra Fonts | noto-fonts-emoji nerd-fonts-complete-mono-glyphs ttf-nerd-fonts-symbols-commons papirus-icon-theme dunst otf-sora ttf-nerd-fonts-symbols-common otf-firamono-nerd inter-font ttf-fantasque-nerd noto-fonts noto-fonts-emoji ttf-comfortaa ttf-jetbrains-mono-nerd ttf-icomoon-feather ttf-iosevka-nerd adobe-source-code-pro-fonts|
 | Extra Icons | https://github.com/Templarian/MaterialDesign-Font |
-| Extra Themes | nordic-theme 
-| Mail | thunderbird |
+| Extra Themes | nordic-theme
+| Mail | thunderbird proton |
 | Fetch | nitch |
 | Misc | btop | lsd bat btop tldr stow wl-clipboard unzip yt-dlp |
 | RSS News | newsboat |
@@ -212,8 +216,8 @@ env = WLR_NO_HARDWARE_CURSORS,1
 | Terminal Tunning | starship |
 | Networking | net-tools |
 | Multipurpose relay | socat |
-| Coder | visual-studio-code-bin |
-| Editor Coder | geany |
+| Coder | visual-studio-code-bin dotnet-sdk dotnet-runtime dotnet-sdk |
+| Editor Code | geany |
 | Text Editor | neovim |
 | Anonymizing  | tor torsocks onionshare |
 | VPN | Mullvad |
@@ -316,6 +320,8 @@ $ sudo pacman -S blackarch/nmap
 ```
 
 # Chromium S3C
+
+> Only if you gonna use chrome
 
 > Chrome Store:
 ```
