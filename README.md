@@ -34,6 +34,7 @@ A Wayland compositor is a fully autonomous Display Server, like Xorg itself. It 
  
 ~~Im not fan of automatic things, the ideea behind here is the Learning~~
 
+### ⛔  Continuous development some things can break, keep it in mind, and you have to deal with it.
 
 
 >>>>> I Share knowledge. [![Website](https://img.shields.io/badge/Telegram-Private-brightgreen?style=flat-square&logo=telegram)](https://t.me/+l5WYQySOL-0yMDQ0)
@@ -49,12 +50,19 @@ A Wayland compositor is a fully autonomous Display Server, like Xorg itself. It 
   - [tmcyber Hypr-S3C Master](#tmcyber-hypr-s3c-master)
   - [GTK Theme and Icons Master](#gtk-theme-and-icons-master)
   - [S3C Tools with Black Arch Arsenal](#s3c-tools-with-black-arch-arsenal)
+- [Tor Control Center](#tor-control-center)
+    - [Setup tor proxy on Arch Linux](#setup-tor-proxy-on-arch-linux)
+      - [Installation](#installation)
+    - [Test Tor Network Connection](#test-tor-network-connection)
+    - [Torify your Shell](#torify-your-shell)
+    - [Enable the Tor control port](#enable-the-tor-control-port)
+    - [Test your `tor` control port](#test-your-tor-control-port)
 - [Chromium S3C](#chromium-s3c)
 - [Rog Control Center](#rog-control-center)
 - [Patches](#patches)
-    - [Extras](#extras)
-      - [Wallpapers](#wallpapers)
-      - [Colors](#colors)
+- [Extras](#extras)
+- [Wallpapers](#wallpapers)
+- [Colors](#colors)
 - [References](#references)
 
 ## Master Installation
@@ -213,12 +221,13 @@ env = WLR_NO_HARDWARE_CURSORS,1
 | Misc | btop | lsd bat btop tldr stow wl-clipboard unzip yt-dlp |
 | RSS News | newsboat |
 | Shell | zsh |
-| Terminal Tunning | starship |
+| Terminal Prompt | starship |
 | Networking | net-tools |
 | Multipurpose relay | socat |
 | Coder | visual-studio-code-bin dotnet-sdk dotnet-runtime dotnet-sdk |
 | Editor Code | geany |
 | Text Editor | neovim |
+| Browser | torbrowser-launcher |
 | Anonymizing  | tor torsocks onionshare |
 | VPN | Mullvad |
 | Latest Cyber News | https://github.com/tmcybers/Latest-Cyber-News |
@@ -319,9 +328,133 @@ $ sudo pacman -S blackarch-wireless
 $ sudo pacman -S blackarch/nmap
 ```
 
+
+# Tor Control Center
+
+> Using Tor is a great way to maintain anonymity on the internet. It’s totally free and only takes a few minutes to configure. You can exercise a lot of control over your Tor connection if you take a little time to understand how the control port works, as we’ve shown you here.
+
+### Setup tor proxy on Arch Linux
+
+
+#### Installation
+
+1. #### Install `tor`
+    ```bash    
+         $ sudo pacman -S tor
+         $ ## nyx provides a terminal status monitor for bandwidth usage, connection details and more.
+         ## im asuming you already have a tor launcher.
+         $ sudo pacman -S torsocks
+         #torsocks
+    ```
+    
+1. #### Start the tor service
+   ```bash    
+        $ sudo systemctl enable --now tor.service
+   ```
+    
+1. #### By default, Tor runs on port 9050. Check it
+   ```bash
+        $ systemctl status tor.service
+        $ ss -nlt
+   ```
+
+
+### Test Tor Network Connection
+
+1. #### Check your current public IP address
+   ```bash    
+        $ wget -qO - https://api.ipify.org; echo
+        # your public ip adress
+   ```
+    
+1. #### Torify the command through the `torsocks`
+   ```bash
+        $ torsocks wget -qO - https://api.ipify.org; echo
+        $ ## must show a different ip address
+   ```
+
+
+### Torify your Shell
+
+1. #### torify the shell, issue
+   ```bash
+        $ source torsocks on
+        $ wget -qO - https://api.ipify.org; echo
+        $ ## must show the ip address of tor node
+   ```
+        
+ 1. #### To turn on `torsocks` permanently for all new shells add it to `.bashrc`
+    ```bash
+         $ echo ". torsocks on" >> ~/.bashrc
+    ```
+
+ 1. #### If you want to turn `torsocks` off, try
+    ```bash
+         $ source torsocks off
+    ```
+    
+    
+### Enable the Tor control port
+
+1. #### Add to your `/etc/tor/torrc`
+   ```bash
+         ControlPort 9051
+   ```
+
+1. #### Set a Tor Control password
+
+    Convert your password from plain-text to hash
+    ```bash
+         $ set +o history # unset bash history
+         $ tor --hash-password your_password
+         $ set -o history # set bash history
+    ```
+    
+1. #### Add that hash to your `/etc/tor/torrc`
+   ```bash
+        HashedControlPassword your_hash
+   ```
+    
+ 1. #### Restart `tor` 
+     ```bash
+         $ sudo systemctl restart tor.service
+     ```
+       
+ 1. #### Check the status of port 9051
+     ```bash
+         $ ss -nlt
+     ```
+    
+    
+
+### Test your `tor` control port
+
+1. #### Install gnu-netcat
+   ```bash
+         $ sudo pacman -S gnu-netcat
+   ```
+
+1. #### To test your `tor` use
+    ```bash
+        $ echo -e 'PROTOCOLINFO\r\n' | nc 127.0.0.1 9051
+    ```
+
+1. #### To request a new circuit (IP address) from Tor, use
+    ```bash
+        $ set +o history
+        $ echo -e 'AUTHENTICATE "my-tor-password"\r\nsignal NEWNYM\r\nQUIT' | nc 127.0.0.1 9051
+        $ set -o history
+    ```
+
+
+
+
+
+
+
 # Chromium S3C
 
-> Only if you gonna use chrome
+> Only if you gonna use chromium.
 
 > Chrome Store:
 ```
@@ -335,8 +468,9 @@ Privacy Settings
 
 Good Practices:
 
->> Block third-party cookies
+>> Block third-party cookies.
 >>> Clean History when leave.
+>>>> Clean cookies every day. YES every day!
 
 
 
@@ -361,7 +495,7 @@ hyprland-nvidia-git (AUR)
 
 
 
-### Extras 
+# Extras 
 
 *Icons for waybar/starship*
 
@@ -371,12 +505,18 @@ Extra Pumping Icons [TopTal](https://www.toptal.com/designers/htmlarrows/)
 [Solid](https://fontawesome.com/v5/cheatsheet/free/solid)
 
 
-#### Wallpapers
+# Wallpapers
+
+`.wallapers` must be placed in your `/home/yourusername/.wallapers`
+
+`path` is defined in hyprpaper.conf 
+
+> do it your way, if you not agree .
 
 [WallP](https://www.pxfuel.com/)
 
 
-#### Colors
+# Colors
 
 [encycolorpedia](https://encycolorpedia.es/)
 
